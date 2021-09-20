@@ -3,6 +3,8 @@ import Header from "./Header";
 
 import Movies from "./Movies";
 
+import "../styles/main.scss";
+
 const App = () => {
   return (
     <SearchProvider>

@@ -1,4 +1,4 @@
-import logo from "../logo.svg";
+import logo from "../images/logo.svg";
 import Search from "./Search";
 
 export default function Header() {
