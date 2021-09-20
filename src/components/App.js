@@ -1,7 +1,15 @@
-import logo from './logo.svg';
+import { SearchProvider } from "../context/SearchContext";
+import Header from "./Header";
 
-const App = () => (
-	<img src={logo} alt="Timescale" />
-)
+import Movies from "./Movies";
+
+const App = () => {
+  return (
+    <SearchProvider>
+      <Header />
+      <Movies />
+    </SearchProvider>
+  );
+};
 
 export default App;
