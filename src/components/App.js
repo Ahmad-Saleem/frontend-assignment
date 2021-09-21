@@ -4,12 +4,15 @@ import Header from "./Header";
 import Movies from "./Movies";
 
 import "../styles/main.scss";
+import { ModalProvider } from "../context/ModalContext";
 
 const App = () => {
   return (
     <SearchProvider>
-      <Header />
-      <Movies />
+      <ModalProvider>
+        <Header />
+        <Movies />
+      </ModalProvider>
     </SearchProvider>
   );
 };
