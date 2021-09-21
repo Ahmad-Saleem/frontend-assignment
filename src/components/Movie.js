@@ -4,6 +4,8 @@ import { ModalHeader } from "../styled/Modal";
 
 export default function Movie({ movieId }) {
   const { data, loading, error } = useAPI(`/movie/${movieId}`, "");
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error!</div>;
   return (
     <>
       <ModalHeader title={data?.title} />

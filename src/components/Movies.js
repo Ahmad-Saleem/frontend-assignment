@@ -39,6 +39,7 @@ export default function Movies() {
                   "original",
                   "w500"
                 )}${movie?.poster_path}`}
+                rating={movie?.vote_average}
               >
                 <h4>{movie?.title}</h4>
               </MovieCard>
